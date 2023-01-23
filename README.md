@@ -1,11 +1,14 @@
-#### Zack Brady, Field Engineer, Rancher Government Solutions (RGS)
-#### [@zackbradys](https://twitter.com/zackbradys) - zack.brady@rancherfederal.com - https://rancher.com/government
+---
+title: Push Button Deployment of Rancher and RKE2 on AWS
+author: Zack Brady, Field Engineer
+contact: zack.brady@rancherfederal.com
+---
 
 
 ![rgs-aws-banner](/images/rgs-aws-banner.png)
 
 
-# Push Button Deployment of Rancher and RKE2 on AWS
+# Push Button Deployment of Rancher and RKE2 on AWS GovCloud
 
 ### Table of Contents
 * [Introduction](#introduction)
