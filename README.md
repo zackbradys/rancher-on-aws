@@ -1,5 +1,5 @@
 ---
-title: Push Button Deployment of Rancher and RKE2 on AWS
+title: Push Button Deployment of Rancher Manager and RKE2
 author: Zack Brady, Field Engineer
 contact: zack.brady@rancherfederal.com
 ---
@@ -8,7 +8,7 @@ contact: zack.brady@rancherfederal.com
 ![rgs-aws-banner](/images/rgs-aws-banner.png)
 
 
-# Push Button Deployment of Rancher and RKE2 on AWS GovCloud
+# Push Button Deployment of Rancher Manager and RKE2 on AWS GovCloud
 
 ### Table of Contents
 * [Introduction](#introduction)
