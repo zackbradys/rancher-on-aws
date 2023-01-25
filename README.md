@@ -12,7 +12,7 @@ contact: zack.brady@rancherfederal.com
 
 ### Table of Contents
   * [Introduction](#introduction)
-  * [Problem Set](#problem-set)
+  * [Challenges with Kubernetes](#challenges-with-kubernetes)
   * [Why Rancher on AWS](#why-rancher-on-aws)
   * [No-Code Deployment](#no-code-deployment)
   * [Industry Alternatives](#industry-alternatives)
@@ -21,23 +21,26 @@ contact: zack.brady@rancherfederal.com
 ## Introduction
 
 
-## Problem Set
+
+## Challenges with Kubernetes
+
 
 
 ## Why Rancher on AWS
 
 
+
 ## No-Code Deployment
 
+Seriosuly. No-Code.
 
-... Seriosuly. No-Code.
-
-
+![rgs-aws-deployment-gif](/images/rgs-aws-deployment.gif)
 
 ... 8 minutes later
 
 
 ## Industry Alternatives
+
 
 
 ## Parting Thoughts
