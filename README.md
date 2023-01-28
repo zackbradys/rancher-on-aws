@@ -20,11 +20,13 @@ contact: zack.brady@rancherfederal.com
 
 ## Introduction
 
-
+Over the last few years, Kubernetes has revolutionized the world of infrastructure. From bare-metal servers to virtual machines to containers, Kubernetes has caused teams to re-evaluate their entire technology stack, in the best way possible.
 
 ## Challenges with Kubernetes
 
+Most teams start off in the world of clusters and containers and quickly realize the complexity of the configuration, management, and deployment. Kubernetes is not as simple as it seems and that is when teams start looking at enterprise tools or start diving down the dark path of internal development of tools. 
 
+For my teams, I always want to have a balance of the additional workload and the features gained from tools and that's why in Kubernetes, I love in Rancher. 
 
 ## Why Rancher on AWS
 
@@ -46,9 +48,10 @@ As you can see, in less than 8 minutes, with four or five clicks, you have a ful
 
 ## Industry Alternatives
 
-Of course there are a other alternatives out there and you should always due your research and due diligence. 
+Of course there are alternatives out there and you should always due your research and due diligence.
 
 If you are considering offloading most of your management of Kubernetes, then there are a few viable alternatives such as Amazon Elastic Kubernetes Service (EKS), Azure Kubernetes Service (AKS), and Google Kubernetes Engine (GKE). If you are considering offloading some of your management of Kubernetes, then Red Hat OpenShift and VMWare Tanzu, may be an option for you.
 
 ## Parting Thoughts
+
 
