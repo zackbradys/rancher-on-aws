@@ -1,12 +1,10 @@
 ---
 title: No-Code Deployment of Rancher Kubernetes on AWS
-author: Zack Brady, Field Engineer
-contact: zack.brady@rancherfederal.com
+author: Zack Brady - Field Engineer, Andy Clemenko - Field Engineer
+contact: zack.brady@rancherfederal.com, andy.clemenko@rancherfederal.com
 ---
 
-
 ![rgs-aws-banner](/images/rgs-aws-banner.png)
-
 
 # No-Code Deployment of Rancher Kubernetes on AWS GovCloud
 
@@ -20,25 +18,37 @@ contact: zack.brady@rancherfederal.com
 
 ## Introduction
 
-Over the last few years, Kubernetes has revolutionized the world of infrastructure. From bare-metal servers to virtual machines to containers, Kubernetes has caused teams to re-evaluate their entire technology stack, in the best way possible.
+Over the last few years, Kubernetes has revolutionized the world of infrastructure and application distribution. From bare-metal servers to virtual machines to containers, Kubernetes has caused teams to re-evaluate their entire technology stack, in the best way possible. However, for many teams Kubernetes remains a very tall mountain to cross. Let's take a look at the infrastructure side of things.
 
 ## Challenges with Kubernetes
 
-Most teams start off in the world of clusters and containers and quickly realize the complexity of the configuration, management, and deployment. From service meshes to ingress controllers to deployments to registeries and more, Kubernetes is not as simple as it seems. Here's when teams start exploring open-source tools, enterprise tools, or start diving down the deep dark path of internal development. 
+Most teams start off in the world of clusters and containers and quickly realize the complexity of the configuration, management, and deployment. From service meshes to ingress controllers to deployments to registries and more, Kubernetes is not as simple as it seems. OpsRamp has a great [chapter](https://www.opsramp.com/guides/why-kubernetes/challenges-with-kubernetes/) about all the challenges. Teams start to get overwhelmed with all the decisions points. There are almost TOO many options out there. Teams start exploring open-source tools, enterprise tools, or start diving down the deep dark path of internal development. Does your team want to take on the tech debt of managing locally? For our teams, we have always wanted to have balance between the workload, the features, and of course, the total cost. Thankfully there are many managed Kubernetes or Kubernetes-As-A-Service offerings. As an industry, we keep seeing the numbers shift away from self-managed Kubernetes to managed Kubernetes. Here's where we can start to talk about how much easier the implementation and management of Kubernetes can be.
 
-For my teams, I always want to have balance between the additional workload, the features, and of course, the total cost. In Kubernetes, this is known as Managed Kubernetes or Kubernetes-As-A-Service (Kaas). As an industry, we keep seeing the numbers shift away from self-managed Kubernetes to managed Kubernetes. Here's where we can start to talk about how much easier the implementation and management of Kuberenetes becomes with Rancher.
+But there are trade offs. One thing to think about is the skill set needed to deploy an identical Kubernetes cluster at the edge, or even air gapped. Having a flexible deployment module is valuable for these types of scenarios. Another thing to consider is development or demo clusters. Being able to rapidly prototype an on-premise cluster in the cloud can greatly improve velocity for all the teams involved. Another thing to think about is vendor lock-in. Some of the cloud providers charge to get your data out. So how can we have the best of both worlds? Deploy a Kubernetes distribution, that you can take anywhere, to a cloud environment.
 
 ## Why Rancher on AWS
 
-Rancher is the complete software stack for anything and everything Kubernetes, it's the single pane of glass into your clusters.
-
-... finish this
+Rancher is rapidly becoming the Kubernetes of choice for every agency and company. The Rancher stack has some very good choices for all the different layers of infrastructure. Rancher, as a stack, is completely malleable. Meaning you can pick and choose which piece you want to run when and where. This gives greater flexibility to engineering the right infrastructure at the right time for the right location. The Rancher stack can be deployed anywhere. We have deployments from every cloud provider down to the tactical edge. In addition the Rancher stack is open-source. This is important for better transparency for security and code quality. Sound good, how about a "No-Code" deployment of the stack? Rancher Government Solutions ([RGS](https://ranchergovernment.com/)) worked with [AWS](https://aws.amazon.com/) to develop a marketplace offering to dramatically reduce the barrier to entry. The offering is a fully-HA free trial of RKE2 and Rancher Manager by Rancher Government Solutions([RGS](https://ranchergovernment.com/)), designed for US Federal Customers.
 
 ## No-Code Deployment
 
-Seriosuly. It's zero code, zero configuration, and zero hassle.
+Seriously. It's zero code, zero configuration, and zero hassle. But what do we get?
 
-There are a few options and variables you need to set, but behind the scenes, it's a Amazon AWS Cloud Formation template. Currently, it's available at **http://tryranchergov.com** and ready to deploy in the Amazon AWS GovCloud (US) regions of **us-gov-east-1** and **us-gov-west-1**. 
+* [AWS](https://aws.amazon.com/)'s Virtual Private Cloud ([VPC](https://aws.amazon.com/vpc/)), Elastic Compute ([EC2](https://aws.amazon.com/ecs/)), Elastic Load Balancer ([ELB](https://aws.amazon.com/elasticloadbalancing/)), Route 53([DNS](https://aws.amazon.com/route53/))
+* Rancher's Kubernetes Distribution [RKE2](https://www.rancher.com/products/rke) which is designed for the Federal Government's high security standards.
+* Rancher's Multi-Cluster Manager, also known as [Rancher](https://www.rancher.com/products/rancher)
+* In addition All of [AWS](https://aws.amazon.com/)'s Security Groups, Identity Access Management ([IAM](https://aws.amazon.com/iam/)) and [Auto Scalling](https://aws.amazon.com/autoscaling/)
+
+There are a few options and variables you need to set, but behind the scenes, it's a Amazon [AWS](https://aws.amazon.com/) Cloud Formation template. Currently, it's available at **http://tryranchergov.com** and ready to deploy in the Amazon AWS GovCloud (US) regions of **us-gov-east-1** and **us-gov-west-1**. Let's walk through the steps.
+
+* Click "Continue to Subscribe"
+* Click "Accept the Terms"
+* Click "Continue to Configuration"
+* Review the options and Region. Click "Continue to Launch"
+* Review and Click "Launch"
+* Enter all the AWS specific items, like keys, domain names and others.
+
+Here is what the complete process looks like.
 
 ![rancher-aws-setup](https://s3.amazonaws.com/rancherfederal.io/public/rancher-aws-setup.gif)
 
@@ -46,12 +56,12 @@ There are a few options and variables you need to set, but behind the scenes, it
 
 ![rancher-aws-deployed](https://s3.amazonaws.com/rancherfederal.io/public/rancher-aws-deployed.gif)
 
-As you can see, in less than 8 minutes, with four or five clicks, you have a fully deployed, configured, and highly available RKE2 Kuberenetes cluster with Rancher Multi Cluster Manager. It's awesome to see how low of a barrier of entry Rancher can provide within Kubernetes. 
+Tada! In less under 10 minutes and a handful of clicks, we have a fully deployed, configured, and highly available Rancher Kubernetes cluster (RKE2) with Rancher Multi-Cluster Manager. It's awesome to see how low of a barrier of entry Rancher can provide within Kubernetes.
 
 ## Industry Alternatives
 
-Of course there are alternatives out there and you should always due your research and due diligence.
-
-If you are considering offloading most of your management of Kubernetes, then there are a few viable alternatives such as Amazon Elastic Kubernetes Service (EKS), Azure Kubernetes Service (AKS), and Google Kubernetes Engine (GKE). If you are considering offloading some of your management of Kubernetes, then Red Hat OpenShift and VMWare Tanzu, may be an option for you.
+Of course there are alternatives out there and you should always due your research and due diligence. There are quite a few Kubernetes distributions to choose from. If you are considering a fully managed solution Amazon Elastic Kubernetes Service ([EKS](https://aws.amazon.com/eks/)) is best of bread right now. There are a lot of other Kubernetes distributions that can be installed on [EC2](https://aws.amazon.com/ecs/).
 
 ## Parting Thoughts
+
+[Rancher Government Solutions](https://ranchergovernment.com/about-rancher-government-solutions) is uniquely positioned to guide our customers through the Kubernetes landscape. Rancher Government Solutions has been improving the security posture of the Rancher Stack for years. RGS has also had the pleasure of guiding our Federal partners in deployment the Stack everywhere the mission has lead.
