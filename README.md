@@ -32,16 +32,23 @@ contact: zack.brady@rancherfederal.com
 
 ## No-Code Deployment
 
-Seriosuly. No-Code.
+Seriosuly. It's zero code, zero configuration, and zero hassle.
 
-![rgs-aws-deployment-gif](/images/rgs-aws-deployment.gif)
+There are a few options and variables you need to set, but it's a simple Amazon AWS Cloud Formation template. Currently, it's available at **http://tryranchergov.com** and in the Amazon AWS GovCloud (US) regions of **us-gov-east-1** and **us-gov-west-1**. 
 
-... 8 minutes later
+![rancher-aws-setup](https://s3.amazonaws.com/rancherfederal.io/public/rancher-aws-setup.gif)
 
+**and 8 minutes later...**
+
+![rancher-aws-deployed](https://s3.amazonaws.com/rancherfederal.io/public/rancher-aws-deployed.gif)
+
+As you can see, in less than 8 minutes, with four or five clicks, you have a fully deployed, configured, and highly available RKE2 Kuberenetes cluster with Rancher Multi Cluster Manager. It's awesome to see how low of a barrier of entry there is to getting started with Rancher and Kubernetes. 
 
 ## Industry Alternatives
 
+Of course there are a other alternatives out there and you should always due your research and due diligence. 
 
+If you are considering offloading most of your management of Kubernetes, then there are a few viable alternatives such as Amazon Elastic Kubernetes Service (EKS), Azure Kubernetes Service (AKS), and Google Kubernetes Engine (GKE). If you are considering offloading some of your management of Kubernetes, then Red Hat OpenShift and VMWare Tanzu, may be an option for you.
 
 ## Parting Thoughts
 
