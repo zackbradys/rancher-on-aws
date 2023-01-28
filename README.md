@@ -4,17 +4,18 @@ author: Zack Brady - Field Engineer, Andy Clemenko - Field Engineer
 contact: zack.brady@rancherfederal.com, andy.clemenko@rancherfederal.com
 ---
 
-![rgs-aws-banner](/images/rgs-aws-banner.png)
+![rgs-aws-banner](images/rgs-aws-banner.png)
 
 # No-Code Deployment of Rancher Kubernetes on AWS GovCloud
 
 ### Table of Contents
-  * [Introduction](#introduction)
-  * [Challenges with Kubernetes](#challenges-with-kubernetes)
-  * [Why Rancher on AWS](#why-rancher-on-aws)
-  * [No-Code Deployment](#no-code-deployment)
-  * [Industry Alternatives](#industry-alternatives)
-  * [Parting Thoughts](#parting-thoughts)
+
+* [Introduction](#introduction)
+* [Challenges with Kubernetes](#challenges-with-kubernetes)
+* [Why Rancher on AWS](#why-rancher-on-aws)
+* [No-Code Deployment](#no-code-deployment)
+* [Cloud Native Options](#Cloud-Native-Options)
+* [What's Next](#what's_next)
 
 ## Introduction
 
@@ -36,8 +37,12 @@ Seriously. It's zero code, zero configuration, and zero hassle. But what do we g
 
 * [AWS](https://aws.amazon.com/)'s Virtual Private Cloud ([VPC](https://aws.amazon.com/vpc/)), Elastic Compute ([EC2](https://aws.amazon.com/ecs/)), Elastic Load Balancer ([ELB](https://aws.amazon.com/elasticloadbalancing/)), Route 53([DNS](https://aws.amazon.com/route53/))
 * Rancher's Kubernetes Distribution [RKE2](https://www.rancher.com/products/rke) which is designed for the Federal Government's high security standards.
-* Rancher's Multi-Cluster Manager, also known as [Rancher](https://www.rancher.com/products/rancher)
+* Rancher's Multi-Cluster Manager, also known as [Rancher or MCM](https://www.rancher.com/products/rancher)
 * In addition All of [AWS](https://aws.amazon.com/)'s Security Groups, Identity Access Management ([IAM](https://aws.amazon.com/iam/)) and [Auto Scalling](https://aws.amazon.com/autoscaling/)
+
+Here is an architecture overview of what is being deployed.
+
+![rancher-arch](images/architecture.png)
 
 There are a few options and variables you need to set, but behind the scenes, it's a Amazon [AWS](https://aws.amazon.com/) Cloud Formation template. Currently, it's available at **http://tryranchergov.com** and ready to deploy in the Amazon AWS GovCloud (US) regions of **us-gov-east-1** and **us-gov-west-1**. Let's walk through the steps.
 
@@ -52,16 +57,22 @@ Here is what the complete process looks like.
 
 ![rancher-aws-setup](https://s3.amazonaws.com/rancherfederal.io/public/rancher-aws-setup.gif)
 
-**and 8 minutes later...**
+**a few moments later...** In less under 10 minutes and a handful of clicks, we have a fully deployed, configured, and highly available Rancher Kubernetes cluster (RKE2) with Rancher Multi-Cluster Manager. There are so many reasons having a low barrier to entry is important. Here is another example of a little automation making a big difference. Now that we have RKE2 and Rancher deployed take a look around. The Rancher (MCM) has a ton of great features. The application catalog is a great one to look at. Another fantastic feature is the Continuous Delivery tool called Fleet. This is great way to apply GitOPS to Kubernetes with no extra software.
 
 ![rancher-aws-deployed](https://s3.amazonaws.com/rancherfederal.io/public/rancher-aws-deployed.gif)
 
-Tada! In less under 10 minutes and a handful of clicks, we have a fully deployed, configured, and highly available Rancher Kubernetes cluster (RKE2) with Rancher Multi-Cluster Manager. It's awesome to see how low of a barrier of entry Rancher can provide within Kubernetes.
+## Cloud Native Options
 
-## Industry Alternatives
+We understand there are alternatives out there. There are dozens of Kubernetes distributions in the Cloud Native Computing Foundation ([CNCF](https://landscape.cncf.io/card-mode?category=certified-kubernetes-distribution&grouping=category) to choose from. It is a good idea to lean towards the open-source versions. Here is the landscape of open-source distributions sorted by stars.
 
-Of course there are alternatives out there and you should always due your research and due diligence. There are quite a few Kubernetes distributions to choose from. If you are considering a fully managed solution Amazon Elastic Kubernetes Service ([EKS](https://aws.amazon.com/eks/)) is best of bread right now. There are a lot of other Kubernetes distributions that can be installed on [EC2](https://aws.amazon.com/ecs/).
+![cncf](images/cncf.jpg)
 
-## Parting Thoughts
+There are some obvious leaders. When considering a fully managed solution Amazon Elastic Kubernetes Service ([EKS](https://aws.amazon.com/eks/)) stands out as the best in bread. [AWS](https://aws.amazon.com/) has been a leader in the cloud provider ecosystem for years and years. One advantage of using [EC2](https://aws.amazon.com/ecs/) is a VM platform is they redundancy and geo-located datacenters. This gives a ton of flexibility to deploy what you need, where you need it.
 
-[Rancher Government Solutions](https://ranchergovernment.com/about-rancher-government-solutions) is uniquely positioned to guide our customers through the Kubernetes landscape. Rancher Government Solutions has been improving the security posture of the Rancher Stack for years. RGS has also had the pleasure of guiding our Federal partners in deployment the Stack everywhere the mission has lead.
+## What's Next
+
+After taking advantage of the No-Code deployment of the Rancher Stack, a lot of tools and options are available. Typical next steps start with deploying an application. Rancher (MCM) has the application catalog to help in that journey. Deploy the Monitoring Stack is a great place to start. The catalog can also be used for clusters that are managed by Rancher (MCM).
+
+![rancher_catalog](images/catalog.jpg)
+
+When you need help, [Rancher Government Solutions](https://ranchergovernment.com/about-rancher-government-solutions) is uniquely positioned. Rancher Government Solutions has been improving the security posture of the Rancher Stack for years. RGS also has the pleasure of guiding our Federal partners in deploying the Rancher Stack everywhere the mission has lead. Combining [AWS](https://aws.amazon.com/), Rancher Government Solutions ([RGS](https://ranchergovernment.com/)) and the Rancher Stack together creates a force multiplier. Please reach out to see how we can extend this experience to your mission.
