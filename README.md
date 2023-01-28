@@ -38,7 +38,7 @@ Rancher is the complete software stack for anything and everything Kubernetes, i
 
 Seriosuly. It's zero code, zero configuration, and zero hassle.
 
-There are a few options and variables you need to set, but it's a simple Amazon AWS Cloud Formation template. Currently, it's available at **http://tryranchergov.com** and in the Amazon AWS GovCloud (US) regions of **us-gov-east-1** and **us-gov-west-1**. 
+There are a few options and variables you need to set, but behind the scenes, it's a Amazon AWS Cloud Formation template. Currently, it's available at **http://tryranchergov.com** and ready to deploy in the Amazon AWS GovCloud (US) regions of **us-gov-east-1** and **us-gov-west-1**. 
 
 ![rancher-aws-setup](https://s3.amazonaws.com/rancherfederal.io/public/rancher-aws-setup.gif)
 
@@ -46,7 +46,7 @@ There are a few options and variables you need to set, but it's a simple Amazon 
 
 ![rancher-aws-deployed](https://s3.amazonaws.com/rancherfederal.io/public/rancher-aws-deployed.gif)
 
-As you can see, in less than 8 minutes, with four or five clicks, you have a fully deployed, configured, and highly available RKE2 Kuberenetes cluster with Rancher Multi Cluster Manager. It's awesome to see how low of a barrier of entry there is to getting started with Rancher and Kubernetes. 
+As you can see, in less than 8 minutes, with four or five clicks, you have a fully deployed, configured, and highly available RKE2 Kuberenetes cluster with Rancher Multi Cluster Manager. It's awesome to see how low of a barrier of entry Rancher can provide within Kubernetes. 
 
 ## Industry Alternatives
 
