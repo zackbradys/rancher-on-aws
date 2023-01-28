@@ -24,13 +24,15 @@ Over the last few years, Kubernetes has revolutionized the world of infrastructu
 
 ## Challenges with Kubernetes
 
-Most teams start off in the world of clusters and containers and quickly realize the complexity of the configuration, management, and deployment. Kubernetes is not as simple as it seems and that is when teams start looking at enterprise tools or start diving down the dark path of internal development of tools. 
+Most teams start off in the world of clusters and containers and quickly realize the complexity of the configuration, management, and deployment. From service meshes to ingress controllers to deployments to registeries and more, Kubernetes is not as simple as it seems. Here's when teams start exploring open-source tools, enterprise tools, or start diving down the deep dark path of internal development. 
 
-For my teams, I always want to have a balance of the additional workload and the features gained from tools and that's why in Kubernetes, I love in Rancher. 
+For my teams, I always want to have balance between the additional workload, the features, and of course, the total cost. In Kubernetes, this is known as Managed Kubernetes or Kubernetes-As-A-Service (Kaas). As an industry, we keep seeing the numbers shift away from self-managed Kubernetes to managed Kubernetes. Here's where we can start to talk about how much easier the implementation and management of Kuberenetes becomes with Rancher.
 
 ## Why Rancher on AWS
 
+Rancher is the complete software stack for anything and everything Kubernetes, it's the single pane of glass into your clusters.
 
+... finish this
 
 ## No-Code Deployment
 
@@ -53,5 +55,3 @@ Of course there are alternatives out there and you should always due your resear
 If you are considering offloading most of your management of Kubernetes, then there are a few viable alternatives such as Amazon Elastic Kubernetes Service (EKS), Azure Kubernetes Service (AKS), and Google Kubernetes Engine (GKE). If you are considering offloading some of your management of Kubernetes, then Red Hat OpenShift and VMWare Tanzu, may be an option for you.
 
 ## Parting Thoughts
-
-
