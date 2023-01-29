@@ -57,7 +57,7 @@ There are a few options and variables you need to set, but behind the scenes, it
 
 Here's the complete process:
 
-![rancher-aws-setup](https://s3.amazonaws.com/rancherfederal.io/public/rancher-aws-setup.gif)
+![rancher-aws-setup](images/rancher-aws-setup.gif)
 
 **a few moments later and with a handful of clicks...** we have a fully deployed, configured, and highly available Rancher Kubernetes Cluster (RKE2) with Rancher Multi-Cluster Manager (MCM). There are endless reasons to why a low barrier to entry is important for our teams. 
 
@@ -65,7 +65,7 @@ Now that we have this deployed, let's take a look around! The Rancher Manager ha
 
 Here's a quick overview:
 
-![rancher-aws-deployed](https://s3.amazonaws.com/rancherfederal.io/public/rancher-aws-deployed.gif)
+![rancher-aws-deployed](images/rancher-aws-deployed.gif)
 
 ## Cloud Native Options
 
