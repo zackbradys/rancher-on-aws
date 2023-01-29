@@ -71,7 +71,7 @@ Here's a quick overview:
 
 ## Cloud Native Options
 
-We understand there are alternatives out there. There are dozens of Kubernetes distributions and platforms in the Cloud Native Computing Foundation ([CNCF](https://landscape.cncf.io/card-mode?category=certified-kubernetes-distribution&grouping=category)). It is a good idea to lean towards the open-source versions. Here is the landscape of open-source distributions sorted by stars (aka popularity).
+We understand there are alternatives out there. There are dozens of Kubernetes distributions and platforms in the Cloud Native Computing Foundation ([CNCF - Kubernetes](https://landscape.cncf.io/card-mode?category=certified-kubernetes-distribution&grouping=category)). It is a good idea to lean towards the open-source versions. Here is the landscape of open-source distributions sorted by stars (aka popularity).
 
 Clearly, there are some obvious leaders here. When reviewing a managed Kubernetes solution, Amazon Elastic Kubernetes Service ([EKS](https://aws.amazon.com/eks/)) stands out as the best option. [AWS](https://aws.amazon.com/) has been a leader in the cloud ecosystem for years and years. One clear advantage of using [Amazon EC2](https://aws.amazon.com/ecs/) over [Amazon EKS](https://aws.amazon.com/eks/) is the fact that it is virtual machine (VM) platform that provides redundancy with region specific datacenters. This allows you to have a ton of flexibility to deploy what you need, where you need it.
 
