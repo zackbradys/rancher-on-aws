@@ -19,22 +19,23 @@ contact: zack.brady@rancherfederal.com, andy.clemenko@rancherfederal.com
 
 ## Introduction
 
-Over the last few years, Kubernetes has revolutionized the world of infrastructure and application distribution. From bare-metal servers to virtual machines to containers, Kubernetes has compelled teams to re-evaluate their entire technology stack –  *in the very best way possible*. However, for many teams, Kubernetes is seen as a  tall mountain to climb. But it doesn’t have to be. 
+Over the last few years, Kubernetes has revolutionized the world of infrastructure and application distribution. From bare-metal servers to virtual machines to containers, Kubernetes has compelled teams to re-evaluate their entire technology stack – *in the very best way possible*. However, for many teams, Kubernetes is seen as a tall mountain to climb. But it doesn’t have to be. 
 
 You can perform no-code deployments of Rancher Kubernetes on the AWS GovCloud!
 
 
 ## Challenges with Kubernetes
 
-Most teams start off in the world of clusters and containers and are surprised by the level of complexity of the configuration, management, and deployment involved. From service meshes to ingress controllers to registries and more, there is a lot to consider and to get right. OpsRamp has a great [chapter](https://www.opsramp.com/guides/why-kubernetes/challenges-with-kubernetes/) on this. Teams can become overwhelmed  and exploring open-source tools, enterprise tools, or start diving down the deep dark path of internal development. 
+Most teams start off in the world of clusters and containers and are surprised by the level of complexity of the configuration, management, and deployment involved. From service meshes to ingress controllers to registries and more, there is a lot to consider and to get right. OpsRamp has a great [chapter](https://www.opsramp.com/guides/why-kubernetes/challenges-with-kubernetes/) on this. Teams can become overwhelmed
+and exploring open-source tools, enterprise tools, or start diving down the deep dark path of internal development. 
 
-Thankfully there are many managed Kubernetes or Kubernetes-as-a-Service offerings. As an industry, we are seeing a continual and growing shift away from self-managed Kubernetes to managed Kubernetes. In these scenarios, Kubernetes is much easier to implement  and manage.
+Thankfully there are many managed Kubernetes or Kubernetes-as-a-Service offerings. As an industry, we are seeing a continual and growing shift away from self-managed Kubernetes to managed Kubernetes. In these scenarios, Kubernetes is much easier to implement and manage.
 
 If this is the path you’re taking, one thing to think about is the skillset needed to deploy an identical Kubernetes cluster at the edge, in the cloud, or in air gapped environments. The ability to have a flexible deployment module is very valuable for these types of scenarios. 
 
 Another thing to consider is your temporary, development, or test clusters. Being able to rapidly prototype an on-premise cluster in the cloud can greatly improve velocity for every team. A third thing to think about is vendor requirements and lock-ins. Some of the cloud providers charge to get your data out. 
 
-Teams looking to have the best of both worlds – a managed Kubernetes distribution with the in-house talent, the ability to quickly prototype, and no vendor lock-in – consider deploying a Kubernetes distribution one that you can take anywhere and everywhere –  to a cloud environment.
+Teams looking to have the best of both worlds – a managed Kubernetes distribution with the in-house talent, the ability to quickly prototype, and no vendor lock-in – consider deploying a Kubernetes distribution one that you can take anywhere and everywhere – to a cloud environment.
 
 
 ## Why Rancher on AWS
@@ -105,6 +106,6 @@ After exploring the No-Code Deployment of the Rancher Stack, you can see there a
 
 ![rancher-catalog](images/rancher-catalog.png)
 
-For investigating infrastructure strategies and exploring Kubernetes, the team at [Rancher Government Solutions (RGS)](https://ranchergovernment.com/)  is uniquely positioned to help your teams. RGS has the experience and history within the government and public sector and has been improving the security posture of the Rancher Stack for years. RGS also has the pleasure of guiding our government and public sector customers in deploying the Rancher Stack, anywhere and everywhere, leaving you to focus on your mission. 
+For investigating infrastructure strategies and exploring Kubernetes, the team at [Rancher Government Solutions (RGS)](https://ranchergovernment.com/) is uniquely positioned to help your teams. RGS has the experience and history within the government and public sector and has been improving the security posture of the Rancher Stack for years. RGS also has the pleasure of guiding our government and public sector customers in deploying the Rancher Stack, anywhere and everywhere, leaving you to focus on your mission. 
 
 Combining [Rancher](https://rancher.com/) and [Amazon AWS](https://aws.amazon.com/), with the assistance of Rancher Government Solutions, creates a force multiplier. Please reach out to see how we can extend this experience to your missions and teams!
