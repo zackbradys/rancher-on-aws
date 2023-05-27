@@ -18,14 +18,12 @@ contact: zack.brady@rancherfederal.com, andy.clemenko@rancherfederal.com
 * [What's Next?](#what-s-next-)
 
 ## Introduction
-
 Over the last few years, Kubernetes has revolutionized the world of infrastructure and application distribution. From bare-metal servers to virtual machines to containers, Kubernetes has compelled teams to re-evaluate their entire technology stack – *in the very best way possible*. However, for many teams, Kubernetes is seen as a tall mountain to climb. But it doesn’t have to be. 
 
 You can perform no-code deployments of Rancher Kubernetes on the AWS GovCloud!
 
 
 ## Challenges with Kubernetes
-
 Most teams start off in the world of clusters and containers and are surprised by the level of complexity of the configuration, management, and deployment involved. From service meshes to ingress controllers to registries and more, there is a lot to consider and to get right. OpsRamp has a great [chapter](https://www.opsramp.com/guides/why-kubernetes/challenges-with-kubernetes/) on this. Teams can become overwhelmed
 and exploring open-source tools, enterprise tools, or start diving down the deep dark path of internal development. 
 
@@ -39,7 +37,6 @@ Teams looking to have the best of both worlds – a managed Kubernetes distribut
 
 
 ## Why Rancher on AWS
-
 ![try-rancher](images/try-rancher.png)
 
 Rancher is rapidly becoming the Kubernetes of choice for every agency, company, and team because the Rancher stack has some exceptional choices for all the different layers of infrastructure. 
@@ -52,7 +49,6 @@ Rancher Government Solutions (RGS) worked with AWS to develop a marketplace of
 
 
 ## No-Code Deployment
-
 Seriously. It's zero code, zero configuration, and zero hassle. But what do you get?
 
 - Rancher Kubernetes Engine ([RKE2](https://www.rancher.com/products/rke)), which is a fully CNCF conformant Kubernetes distribution, focusing on security and compliance within the government and public sectors.
@@ -92,7 +88,6 @@ Here's a quick overview:
 
 
 ## Cloud Native Options
-
 We understand there are alternatives out there. There are dozens of Kubernetes distributions and platforms in the Cloud Native Computing Foundation ([CNCF - Kubernetes](https://landscape.cncf.io/card-mode?category=certified-kubernetes-distribution&grouping=category)). It is a good idea to lean towards the open-source versions.
 
 Clearly, there are some obvious leaders. When reviewing a managed Kubernetes solution, Amazon Elastic Kubernetes Service ([EKS](https://aws.amazon.com/eks/)) stands out as the best option. AWS has been a leader in the cloud ecosystem for years and years. 
@@ -101,7 +96,6 @@ One clear advantage of using [Amazon EC2](https://aws.amazon.com/ecs/) with [
 
 
 ## What's Next?
-
 After exploring the No-Code Deployment of the Rancher Stack, you can see there are a ton of options available to you. In our experience, the typical next steps start with deploying workloads (aka applications) and investigating infrastructure strategies. The Rancher Manager (MCM) has the application catalog to help in that journey. We would recommend deploying the "Monitoring Stack" as a great place to start. If you have existing clusters, the Rancher Manager (MCM) has the ability to leverage its features by importing those clusters.
 
 ![rancher-catalog](images/rancher-catalog.png)
