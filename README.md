@@ -45,7 +45,7 @@ Rancher, as a stack, is completely malleable. Meaning, you can pick and choose w
 
 In addition, the Rancher stack is open source, this is important for better transparency for security and code quality. Sounds good, right? How about a "No-Code" deployment of the stack? 
 
-Rancher Government Solutions (RGS) worked with AWS to develop a marketplace offering to dramatically reduce the barrier to entry. The offering is a highly available test flight of RKE2 and Rancher Manager by Rancher Government Solutions (RGS), designed for U.S. Federal and Public Sector Customers.
+Rancher Government Solutions (RGS) worked with AWS to develop a marketplace offering to dramatically reduce the barrier to entry. The offering is a highly available test flight of Rancher RKE2 and Rancher Manager by Rancher Government Solutions (RGS), designed for U.S. Federal and Public Sector Customers.
 
 
 ## No-Code Deployment
