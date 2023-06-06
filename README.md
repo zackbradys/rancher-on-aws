@@ -6,7 +6,7 @@ contact: zack.brady@rancherfederal.com, andy.clemenko@rancherfederal.com
 
 ![rgs-aws-banner](images/rgs-aws-banner.png)
 
-# No-Code Deployment of Rancher Kubernetes on AWS GovCloud
+# No-Code Deployment of Rancher Kubernetes on AWS GovCloud ([tryranchergov.com](http://tryranchergov.com/))
 
 ### Table of Contents
 
@@ -15,7 +15,7 @@ contact: zack.brady@rancherfederal.com, andy.clemenko@rancherfederal.com
 * [Why Rancher on AWS](#why-rancher-on-aws)
 * [No-Code Deployment](#no-code-deployment)
 * [Cloud Native Options](#cloud-native-options)
-* [What's Next?](#what-s-next-)
+* [What is Next?](#what-is-next)
 
 ## Introduction
 Over the last few years, Kubernetes has revolutionized the world of infrastructure and application distribution. From bare-metal servers to virtual machines to containers, Kubernetes has compelled teams to re-evaluate their entire technology stack – *in the very best way possible*. However, for many teams, Kubernetes is seen as a tall mountain to climb. But it doesn’t have to be. 
@@ -45,7 +45,7 @@ Rancher, as a stack, is completely malleable. Meaning, you can pick and choose w
 
 In addition, the Rancher stack is open source, this is important for better transparency for security and code quality. Sounds good, right? How about a "No-Code" deployment of the stack? 
 
-Rancher Government Solutions (RGS) worked with AWS to develop a marketplace offering to dramatically reduce the barrier to entry. The offering is a highly available free trial of RKE2 and Rancher Manager by Rancher Government Solutions (RGS), designed for U.S. Federal and Public Sector Customers.
+Rancher Government Solutions (RGS) worked with AWS to develop a marketplace offering to dramatically reduce the barrier to entry. The offering is a highly available test flight of RKE2 and Rancher Manager by Rancher Government Solutions (RGS), designed for U.S. Federal and Public Sector Customers.
 
 
 ## No-Code Deployment
@@ -95,7 +95,7 @@ Clearly, there are some obvious leaders. When reviewing a managed Kubernetes sol
 One clear advantage of using [Amazon EC2](https://aws.amazon.com/ecs/) with [Rancher](https://rancher.com/) over [Amazon EKS](https://aws.amazon.com/eks/), is that it is a virtual machine (VM) platform that provides redundancy with region specific datacenters and the Rancher Manager. This allows you to have a ton of flexibility to deploy what you need, where you need it.
 
 
-## What's Next?
+## What is Next?
 After exploring the No-Code Deployment of the Rancher Stack, you can see there are a ton of options available to you. In our experience, the typical next steps start with deploying workloads (aka applications) and investigating infrastructure strategies. The Rancher Manager (MCM) has the application catalog to help in that journey. We would recommend deploying the "Monitoring Stack" as a great place to start. If you have existing clusters, the Rancher Manager (MCM) has the ability to leverage its features by importing those clusters.
 
 ![rancher-catalog](images/rancher-catalog.png)
